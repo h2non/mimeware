@@ -1,0 +1,37 @@
+{
+  "name": "mimeware",
+  "description": "Cross-framework HTTP middleware to infer the proper MIME content type response header",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "h2non/mimeware",
+  "author": "Tomas Aparicio",
+  "main": "index",
+  "keywords": [
+    "middleware",
+    "mime",
+    "content",
+    "type",
+    "mimetype",
+    "types",
+    "text",
+    "response",
+    "express",
+    "connect"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --ui tdd"
+  },
+  "dependencies": {
+    "lodash.merge": "^3.0.0",
+    "mime": "^1.2.11"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "express": "^3.4.1",
+    "mocha": "^2.1.0",
+    "request": "^2.51.0"
+  }
+}
