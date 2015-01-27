@@ -1,9 +1,11 @@
 # mimeware [![Build Status](https://api.travis-ci.org/h2non/mimeware.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/mimeware.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/mimewire.svg)][npm]
 
-Node.js HTTP server middleware to infer and define the proper MIME content type as response header.
+Node.js HTTP server middleware to infer and define the proper MIME content type as response header
 
 It works in multiple web frameworks such as Connect, Express, Restify, Sails...
-which implements the standard `connect`-based interface: `use(function (req, res, next) { ... })`
+which implements the standard connect-based middleware interface: `use(function (req, res, next) { ... })`
+
+Includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community. Uses [node-mime](https://github.com/broofa/node-mime)
 
 It was implemented specially for older Express/Connect versions
 
