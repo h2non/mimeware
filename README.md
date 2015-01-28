@@ -25,7 +25,18 @@ var app = express()
 app.use(mimewire({ defaultType: 'text/html' }))
 
 app.get('/hello', function (req, res, next) {
+  // respond with default type: text/html
   res.send('Hello World!')
+})
+
+app.get('/hello.json', function (req, res, next) {
+  // respond with type: application/json
+  res.json({ say: 'Hello World!' })
+})
+
+app.get('/hello.xml', function (req, res, next) {
+  // respond with type: text/xml
+  res.send('<say>Hello World!</say>')
 })
 ```
 
