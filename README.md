@@ -1,6 +1,6 @@
 # mimeware [![Build Status](https://api.travis-ci.org/h2non/mimeware.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/mimeware.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/mimeware.svg)][npm]
 
-Node.js HTTP server middleware to infer and define the proper MIME content type as response header
+Node.js/io.js HTTP server middleware to infer and define the proper MIME content type as response header
 
 It works in multiple web frameworks such as Connect, Express, Restify, Sails...
 which implements the standard connect-based middleware interface: `use(function (req, res, next) { ... })`
