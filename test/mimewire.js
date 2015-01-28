@@ -25,7 +25,7 @@ suite('mimewire', function () {
 
     test('respond with a default content type', function (done) {
       request('http://localhost:8888', function (err, res) {
-        expect(res.headers['content-type']).to.be.equal('text/html; charset=UTF-8')
+        expect(res.headers['content-type']).to.be.equal('text/html; charset=utf-8')
         done()
       })
     })
