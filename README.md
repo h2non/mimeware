@@ -1,4 +1,4 @@
-# mimeware [![Build Status](https://api.travis-ci.org/h2non/mimeware.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/mimeware.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/mimewire.svg)][npm]
+# mimeware [![Build Status](https://api.travis-ci.org/h2non/mimeware.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/mimeware.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/mimeware.svg)][npm]
 
 Node.js HTTP server middleware to infer and define the proper MIME content type as response header
 
@@ -12,17 +12,17 @@ It was implemented specially for older Express/Connect versions
 ## Installation
 
 ```bash
-npm install mimewire --save
+npm install mimeware --save
 ```
 
 ## Usage
 
 ```js
 var express = require('express')
-var mimewire = require('mimewire')
+var mimeware = require('mimeware')
 var app = express()
 
-app.use(mimewire({ defaultType: 'text/html' }))
+app.use(mimeware({ defaultType: 'text/html' }))
 
 app.get('/hello', function (req, res, next) {
   // respond with default type: text/html
