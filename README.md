@@ -2,12 +2,13 @@
 
 Node.js/io.js HTTP server middleware to infer and define the proper MIME content type as response header
 
-It works in multiple web frameworks such as Connect, Express, Restify, Sails...
+It is web framework agnostic and works properly in Connect, Express, Restify, Sails... among others
 which implements the standard connect-based middleware interface: `use(function (req, res, next) { ... })`
 
-Includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community. Uses [node-mime](https://github.com/broofa/node-mime)
+It includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community. It uses [node-mime](https://github.com/broofa/node-mime)
 
-It was implemented specially for older Express/Connect versions
+It was implemented specially for older Express/Connect versions 
+which has no smart support for content type discovering
 
 ## Installation
 
@@ -51,6 +52,11 @@ Define the default MIME type to use if cannot infer it
 Type: `array<string|regex>`
 
 An array of regex or string-like path patterns to ignore
+
+#### defaultCharset
+Type: `string` Default: `utf-8`
+
+Define the default charset encoding type if cannot infer one.
 
 #### charset
 Type: `boolean` Default: `true`
